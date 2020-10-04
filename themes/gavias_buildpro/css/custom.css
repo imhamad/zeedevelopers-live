@@ -1,0 +1,16 @@
+.rounded__md{
+
+    text-align: center;
+       display: boc;
+       display: block;
+       margin: auto;
+
+       max-width: 20%;
+       border-radius: 50% !important;
+   }
+   .no__margin{
+       margin: 0;
+       min-width: 100%;
+       display: block;
+      border-radius: 10px;
+   }
