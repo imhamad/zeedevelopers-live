@@ -1,5 +1,5 @@
 <!-- Start Display article for teaser page -->
-{% if teaser == true %} 
+{% if teaser == true %}
   <div class="team-block">
     <div class="team-block-inner">
       <div class="team-image">{{ content.field_team_image }}
@@ -12,15 +12,15 @@
               <a class="gva-social" href="{{ item.getFieldCollectionItem().field_team_social_link.value|e }}">
                 <i class="{{ item.getFieldCollectionItem().field_team_social_icon.value|e }}"></i>
               </a>
-            {% endfor %} 
+            {% endfor %}
           </div>
-          <div class="team-name"><a href="{{ url }}">{{ node.field_team_name.value|e }}</a></div>   
+          <div class="team-name"><a href="{{ url }}">{{ node.field_team_name.value|e }}</a></div>
           <div class="team-job">{{ node.field_team_position.value|e }}</div>
           <div class="team-body hidden">{{ content.body }}</div>
-        </div>  
+        </div>
       </div>
-    </div>  
-  </div>  
+    </div>
+  </div>
 <!-- End Display article for teaser page -->
 {% else %}
 <!-- Start Display article for detail page -->
@@ -44,7 +44,7 @@
       <div class="name">{{ node.field_team_name.value|e }}</div>
       <div class="job">{{ node.field_team_position.value|e }}</div>
       <div class="line"><span class="one"></span><span class="second"></span><span class="three"></span></div>
-    </div> 
+    </div>
     <div class="team-description">{{ content.field_team_description }}</div>
     <div class="team-info">
       <div class="row">
@@ -60,16 +60,16 @@
                 <a class="gva-social" href="{{ item.getFieldCollectionItem().field_team_social_link.value|e }}">
                   <i class="{{ item.getFieldCollectionItem().field_team_social_icon.value|e }}"></i>
                 </a>
-              {% endfor %} 
+              {% endfor %}
             </div>
           </div>
           <div class="team-education">
-            <div class="heading">{{'Education'|t}}</div>
+            <div class="heading">{{'Experience'|t}}</div>
             <div class="content-inner">{{ content.field_team_education }}</div>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
 
     <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
       {{ content|without('field_team_name', 'field_team_contact', 'field_team_image', 'field_team_contact', 'field_team_quote', 'field_team_social', 'field_team_education', 'field_team_position', 'field_team_email', 'field_team_description', 'comment') }}
@@ -81,7 +81,7 @@
       <div id="node-single-comment">
         {{ content.comment }}
       </div>
-    {% endif %}  
+    {% endif %}
 
   </div>
 </article>
